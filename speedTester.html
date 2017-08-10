@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+  <title>Download Speed Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src = "speedTester.js"></script>
+</head>
+<body>
+<script>
+var speedMbps = 0;
+function printSpeed() {
+     $("body").html(speedMbps.toString());
+}    
+MeasureConnectionSpeed(printSpeed);
+</script>
+</body>
+</html>
